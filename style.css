@@ -1,0 +1,72 @@
+body {
+  font-family: serif;
+  margin: 0;
+  background: #f9f5ec;
+  color: #3a2c1a;
+}
+
+header {
+  background: #ffcc80;
+  text-align: center;
+  padding: 15px;
+}
+
+main {
+  padding: 20px;
+  font-size: 20px;
+  line-height: 1.8;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background: #ffe0b2;
+  display: flex;
+  justify-content: space-around;
+  padding: 10px;
+}
+
+button {
+  font-size: 16px;
+  padding: 8px 20px;
+}
+
+#chapter-list-screen {
+  padding: 20px;
+}
+
+#chapter-list {
+  list-style: none;
+  padding: 0;
+}
+
+#chapter-list li {
+  padding: 12px;
+  margin-bottom: 8px;
+  background: #ffe0b2;
+  cursor: pointer;
+  border-radius: 6px;
+  font-size: 18px;
+}
+
+#chapter-list li:hover {
+  background: #ffcc80;
+}
+
+#chapter-content {
+  margin-bottom: 80px;
+}
+.dark {
+  background: #1c1c1c;
+  color: #f2f2f2;
+}
+
+.dark header,
+.dark footer {
+  background: #333;
+}
+
+.dark #chapter-list li {
+  background: #444;
+}

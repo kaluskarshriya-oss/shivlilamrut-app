@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="mr">
+<head>
+  <meta charset="UTF-8" />
+  <title>Shivlilamrut Kathasar</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header>
+    <h1>॥ श्री शिवलिलामृत ॥</h1>
+  </header>
+
+  <main>
+
+  <!-- Chapter List Screen -->
+  <div id="chapter-list-screen">
+    <h2>अध्याय सूची</h2>
+    <ul id="chapter-list"></ul>
+  </div>
+
+  <!-- Reading Screen -->
+  <div id="reading-screen" style="display:none;">
+    <h2 id="chapter-title"></h2>
+    <div id="chapter-content"></div>
+  </div>
+
+</main>
+
+<footer id="reader-footer" style="display:none;">
+  <button onclick="goBack()">⬅ सूची</button>
+  <button onclick="prevChapter()">मागे</button>
+  <button onclick="nextChapter()">पुढे</button>
+  <button onclick="decreaseFont()">A-</button>
+  <button onclick="increaseFont()">A+</button>
+  <button onclick="toggleMode()">🌙</button>
+</footer>
+
+
+
+  <footer>
+    <button onclick="prevChapter()">मागे</button>
+    <button onclick="nextChapter()">पुढे</button>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
