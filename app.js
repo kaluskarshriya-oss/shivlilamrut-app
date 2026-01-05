@@ -2,7 +2,7 @@ let chapters = [];
 let chapter = 1;
 let fontSize = 20;
 
-fetch("data/shivlilamrut.json")
+fetch("Data/adhyay.json")
   .then(res => res.json())
   .then(data => {
     chapters = data.chapters;
@@ -85,3 +85,4 @@ function goBack() {
 if ("serviceWorker" in navigator) {
   navigator.serviceWorker.register("service-worker.js");
 }
+
