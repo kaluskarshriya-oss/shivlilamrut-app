@@ -6,13 +6,9 @@ fetch("Data/adhyay.json")
   .then(res => res.json())
   .then(data => {
     chapters = data.chapters;
-    const saved = localStorage.getItem("lastChapter");
-    if (saved) {
-      openChapter(parseInt(saved));
-    } else {
-      showChapterList();
-    }
-  });
+    showChapterList();
+  })
+  .catch(err => console.error("Error loading JSON:", err));
 
 
 function showChapterList() {
@@ -85,4 +81,5 @@ function goBack() {
 if ("serviceWorker" in navigator) {
   navigator.serviceWorker.register("service-worker.js");
 }
+
 
